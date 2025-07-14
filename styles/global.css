@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-family: "Poppins", sans-serif;
   --text: 400 1.6rem/2.4rem var(--font-family);
@@ -28,4 +34,5 @@
 
 body {
   font-size: 1.6rem;
+  /* overflow: hidden; */
 }

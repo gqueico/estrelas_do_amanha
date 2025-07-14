@@ -3,7 +3,6 @@
 
   display: grid;
   grid-template-columns: 51.25% 48.75%;
-
 }
 
 main {
@@ -13,6 +12,19 @@ main {
 
   & .main-container {
     max-width: 52.8rem;
+    margin-left: auto;
+  }
+
+  & .back {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  & h1 {
+    margin-bottom: .8rem;
+    font: 600 2.4rem/3rem var(--font-family);
   }
 }
 
@@ -23,5 +35,18 @@ aside {
 
   & .aside-container {
     max-width: 49.6rem;
+
+    & > img {
+      margin-top: 3.2rem;
+    }
+  }
+
+  & h2 {
+    margin-block: .8rem;
+    font: 600 4rem/5rem var(--font-family);
+
+    & span {
+      color: var(--text-highlight);
+    }
   }
 }

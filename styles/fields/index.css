@@ -1,11 +1,13 @@
+@import url(droparea.css);
+
 input,
 textarea,
 select {
   width: 100%;
   padding: 1.2rem 1.6rem;
-  appearance: none;
   font: var(--text);
   color: var(--text-primary);
+  appearance: none;
   border-radius: .8rem;
   border: 1px solid var(--stroke-default);
 }
@@ -18,7 +20,8 @@ label {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+input[type="date"]:focus-within {
   outline: .4rem solid var(--surface-secondary);
   border: .1rem solid var(--stroke-highlight);
 }
@@ -44,4 +47,9 @@ input[type="date"] {
 
 select {
   background: url(../../assets/icons/arrow-down-01.svg) no-repeat calc(100% - 1.6rem);
+}
+
+textarea {
+  min-height: 12rem;
+  resize: vertical;
 }

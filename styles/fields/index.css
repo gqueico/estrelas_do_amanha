@@ -26,6 +26,14 @@ input[type="date"]:focus-within {
   border: .1rem solid var(--stroke-highlight);
 }
 
+input {
+  &[disabled] {
+    color: var(--text-primary);
+    border: 1px solid var(--stroke-default);
+    background-color: var(--surface-disabled);
+  }
+}
+
 input[type="date"] {
   position: relative;
 
@@ -52,4 +60,16 @@ select {
 textarea {
   min-height: 12rem;
   resize: vertical;
+}
+
+.address {
+  & .flex {
+    gap: 2rem;
+  }
+}
+
+.input-wrapper {
+  &:has([disabled]) {
+    opacity: .5;
+  }
 }

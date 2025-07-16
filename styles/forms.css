@@ -8,6 +8,10 @@ form {
     gap: 2.4rem;
     border: none;
 
+    + fieldset {
+      margin-top: 4.8rem;
+    }
+
     & legend {
       margin-bottom: 2.4rem;
       font: 600 1.6rem/2rem var(--font-family);

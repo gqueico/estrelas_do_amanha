@@ -32,6 +32,35 @@ input {
     border: 1px solid var(--stroke-default);
     background-color: var(--surface-disabled);
   }
+
+  &:invalid {
+    border: 2px solid var(--semantic-error);
+  }
+
+  & + small {
+    display: inline-block;
+    margin-top: .4rem;
+    font: var(--text-sm);
+    color: #78716C;
+    line-height: 1.96rem;
+  }
+
+  &[required] {
+    & + .error {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      margin-top: .4rem;
+      font: var(--text-sm);
+      color: var(--semantic-error);
+      line-height: 1.96rem;
+    }
+  }
+
+  &:not(:focus):valid + .error,
+  &:valid + .error {
+    display: none;
+  }
 }
 
 input[type="date"] {

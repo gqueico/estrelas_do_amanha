@@ -18,4 +18,12 @@ form {
       color: var(--text-primary);
     }
   }
+
+  & .actions-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    margin-top: 6.4rem;
+  }
 }
